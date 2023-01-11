@@ -15,10 +15,10 @@ Workaround:
 ## Contents of `${{secrets.AZURE_CREDENTIALS}}`
 
     {
-      "clientId": "",
-      "clientSecret": "",
-      "subscriptionId": "",
-      "tenantId": "",
+      "clientId": "***",
+      "clientSecret": "***",
+      "subscriptionId": "***",
+      "tenantId": "***",
       "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
       "resourceManagerEndpointUrl": "https://management.azure.com/",
       "activeDirectoryGraphResourceId": "https://graph.windows.net/",
