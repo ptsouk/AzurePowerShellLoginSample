@@ -14,5 +14,3 @@
   "galleryEndpointUrl": "https://gallery.azure.com/",
   "managementEndpointUrl": "https://management.core.windows.net/"
 }`
-
-[Sample workflow that uses Azure login action to run Azure PowerShell](https://github.com/Azure/login#sample-workflow-that-uses-azure-login-action-to-run-azure-powershell)
