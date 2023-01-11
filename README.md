@@ -1,5 +1,10 @@
 ## [Action Fails after Login via Az module](https://github.com/Azure/powershell/issues/73)
 
+Action demonstrating the issue:
+[![Fail-AzurePowerShellLoginWithScript](https://github.com/ptsouk/AzurePowerShellLoginSample/actions/workflows/Fail-AzurePowerShellLoginWithScript.yml/badge.svg)](https://github.com/ptsouk/AzurePowerShellLoginSample/actions/workflows/Fail-AzurePowerShellLoginWithScript.yml)
+
+Workaround:
+[![Success-AzurePowerShellLoginWithScript](https://github.com/ptsouk/AzurePowerShellLoginSample/actions/workflows/Success-AzurePowerShellLoginWithScript.yml/badge.svg)](https://github.com/ptsouk/AzurePowerShellLoginSample/actions/workflows/Success-AzurePowerShellLoginWithScript.yml)
 
 [Configure a service principal with a secret](https://github.com/Azure/login#configure-a-service-principal-with-a-secret)
 
@@ -7,7 +12,7 @@
                             --scopes /subscriptions/{subscription-id}/resourceGroups/{resource-group} \
                             --sdk-auth`
 
-## Contents of `${{secrets.AZURE_CREDENTIALS}}` :
+## Contents of `${{secrets.AZURE_CREDENTIALS}}`
 
     {
       "clientId": "",
@@ -21,4 +26,3 @@
       "galleryEndpointUrl": "https://gallery.azure.com/",
       "managementEndpointUrl": "https://management.core.windows.net/"
     }
-
