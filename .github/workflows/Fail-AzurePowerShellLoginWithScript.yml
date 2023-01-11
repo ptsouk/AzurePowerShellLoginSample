@@ -1,4 +1,4 @@
-name: AzurePowerShellLoginWithScript
+name: Fail-AzurePowerShellLoginWithScript
 on:
   workflow_dispatch:
 
@@ -18,7 +18,7 @@ jobs:
       uses: azure/powershell@v1
       with:
         azPSVersion: "latest"
-        inlineScript: |
+        inlineScript: |          
           if(-not (Get-Module Az.ResourceGraph -ListAvailable))
           {
             Install-Module Az.ResourceGraph -Scope CurrentUser -Force
