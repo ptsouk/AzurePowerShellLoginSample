@@ -19,4 +19,10 @@ jobs:
       with:
         azPSVersion: "latest"
         inlineScript: |
-          Get-AzVM
+          if(-not (Get-Module Az.ResourceGraph -ListAvailable))
+          {
+            Install-Module Az.ResourceGraph -Scope CurrentUser -Force
+          }
+          $query = "resourcecontainers | where type == 'microsoft.resources/subscriptions' | project name, id | sort by name asc"
+          $subscriptions = Search-AzGraph -Query $query -UseTenantScope
+          $subscriptions
